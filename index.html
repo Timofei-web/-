@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мемология</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="title-bar">
+            <div class="title-bar-left">
+                <div class="Logo">
+                    <img src="./images/abstract-colorful-pixel-background.jpg" class="logo-exe" alt="">
+                    <p>Memology.exe</p>
+                </div>
+            </div>
+            <div class="title-bar-right">
+                <div id="timeDisplay" class="clock">00:00:00</div>
+                <div class="images_old_windows">
+                    <img src="./images/sort_13111235.png" class="collaps-" alt="collapse">
+                    <img src="./images/windows-forsite.png" class="windows" alt="windows">
+                    <img src="./images/close.png" class="gray-x" alt="close">
+                </div>
+            </div>
+        </div>
+        <div class="retro-container">
+            <img src="./images/cursor-pix.png" alt="cursor" class="retro-cursor">
+            <nav>
+                <a href="index.html" class="retro-button">Коллекция</a>
+                <a href="form.html" class="retro-button">Добавить</a>
+                
+                <a href="2000-s.html" class="retro-button">2000-е</a>
+                <a href="2010-s.html" class="retro-button">2010-е</a>
+                <a href="modern.html" class="retro-button">Наше время</a>
+                
+                <a href="about.html" class="retro-button">О проекте</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="main">
+            <img src="./images/add-banner.jpg" class="add-banner" alt="banner">
+            <div class="main-txt">
+                <h1>Мемология</h1>
+                <p>Ваша личная база данных для учета и коллекционирования интернет-наследия. Здесь вы можете добавлять любимые мемы, сортировать их по эпохам и отмечать изученные.</p>
+            </div>
+            <img src="./images/add-banner.jpg" class="add-banner" alt="banner">
+        </section>
+
+        <section class="interval">
+            <div class="interval-logos">
+                <img src="./images/Windows98.png" class="logos-int" alt="">
+                <img src="./images/Dvd-logo.png" class="logos-int" alt="">
+                <img src="./images/Internet.png" class="logos-int" alt="">
+                <img src="./images/Music-old.png" class="logos-int" alt="">
+                <img src="./images/my-computer.png" class="logos-int" alt="">
+                <img src="./images/Recycle-trashcan-windows.png" class="logos-int" alt="">
+            </div>
+        </section>
+
+        <section class="meme-collection" id="collection">
+            <div class="collection-header">
+                <div class="txt-90">
+                    <h2>База мемов</h2>
+                </div>
+                
+                <div class="collection-stats">
+                    <p>Всего в базе: <span id="total-memes" class="digital-counter">0</span></p>
+                    <a href="form.html" class="retro-button add-btn">+ Создать</a>
+                </div>
+            </div>
+
+            <div id="memes-container" class="memes-grid">
+                </div>
+        </section>
+    </main>
+    <footer class="retro-footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <p>Copyright © 1998 Memology.exe</p>
+                <p>Все права защищены (наверное).</p>
+            </div>
+            
+            <div class="footer-center">
+                <div class="hit-counter">
+                    <span class="digit">0</span>
+                    <span class="digit">0</span>
+                    <span class="digit">1</span>
+                    <span class="digit">3</span>
+                    <span class="digit">3</span>
+                    <span class="digit">7</span>
+                </div>
+                <p>Вы наш любимый посетитель!</p>
+            </div>
+
+            <div class="footer-right">
+                <div class="badges">
+                    <div class="fake-badge">IE 4.0</div>
+                    <div class="fake-badge">100% FREE</div>
+                </div>
+                <a href="mailto:admin@memology.com" class="retro-button mail-btn">Написать админу</a>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/storage.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

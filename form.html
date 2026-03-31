@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавить мем | Мемология</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="title-bar">
+            <div class="title-bar-left">
+                <div class="Logo">
+                    <img src="./images/abstract-colorful-pixel-background.jpg" class="logo-exe" alt="">
+                    <p>Memology.exe</p>
+                </div>
+            </div>
+            <div class="title-bar-right">
+                <div class="images_old_windows">
+                    <img src="./images/sort_13111235.png" class="collaps-" alt="collapse">
+                    <img src="./images/windows-forsite.png" class="windows" alt="windows">
+                    <img src="./images/close.png" class="gray-x" alt="close">
+                </div>
+            </div>
+        </div>
+        <div class="retro-container">
+            <img src="./images/cursor-pix.png" alt="cursor" class="retro-cursor">
+            <nav>
+                <a href="index.html" class="retro-button">Коллекция</a>
+                <a href="form.html" class="retro-button">Добавить</a>
+                
+                <a href="2000-s.html" class="retro-button">2000-е</a>
+                <a href="2010-s.html" class="retro-button">2010-е</a>
+                <a href="modern.html" class="retro-button">Наше время</a>
+                
+                <a href="about.html" class="retro-button">О проекте</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="form-page-main">
+        <section class="form-window">
+            <div class="history-headline">
+                <h2>Добавить новый мем</h2>
+            </div>
+            
+            <form id="add-meme-form" class="retro-form">
+                
+                <div class="form-group">
+                    <label for="meme-title">Название мема:</label>
+                    <input type="text" id="meme-title" class="retro-input" placeholder="Например: Кот с блинами">
+                </div>
+
+                <div class="form-group">
+                    <label for="meme-category">Эпоха (Категория):</label>
+                    <select id="meme-category" class="retro-input">
+                        <option value="">-- Выберите эпоху --</option>
+                        <option value="90-е">90-е (Зарождение)</option>
+                        <option value="2000-е">2000-е (Web 2.0)</option>
+                        <option value="2010-е">2010-е (Flat & Соцсети)</option>
+                        <option value="Наше время">Наше время (Постирония)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="meme-url">Ссылка на картинку (URL):</label>
+                    <input type="text" id="meme-url" class="retro-input" placeholder="https://example.com/meme.jpg">
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="retro-button submit-btn">💾 Сохранить</button>
+                    <button type="button" class="retro-button cancel-btn" onclick="window.location.href='index.html'">Отмена</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script src="./js/storage.js"></script>
+    <script src="./js/form.js"></script>
+</body>
+</html>
